@@ -5,7 +5,7 @@ export const fetchMovies = createAsyncThunk('fetch-movies', async (apiUrl) => {
     if (!response.ok) {
         throw new Error(`HTTP error! status: ${response.status}`);
     }
-    return response.json()
+  return await response.json();
 })
 
 const moviesSlice = createSlice({
