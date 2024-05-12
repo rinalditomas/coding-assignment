@@ -14,7 +14,7 @@ const Movie = ({ movie, viewTrailer, closeCard }) => {
 
     const myClickHandler = (e) => {
         e.cancelBubble = true
-        if (e.stopPropagation) e.stopPropagation()
+  e.stopPropagation()
         e.target.parentElement.parentElement.classList.remove('opened')
     }
 
